@@ -5,33 +5,45 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/drawer"
-    tools:context="com.example.shubham.navigationapp.MainActivity">
 
+
+    tools:context="com.example.shubham.navigationapp.MainActivity">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:orientation="vertical">
 
-        <Button
 
-            android:id="@+id/registeration"
-
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_gravity="center"
-
-
-            android:text="Register" />
-
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        >
         <Button
             android:id="@+id/login"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Log in"
-            android:layout_gravity="center"
-             />
+            android:text="Login"
+            />
+
+        <Button
+            android:id="@+id/registeration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Registeration" />
     </LinearLayout>
-        <android.support.design.widget.NavigationView
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.8"
+        android:background="#0000FF"
+        android:id="@+id/fl">
+
+    </FrameLayout>
+    </LinearLayout>
+
+    <android.support.design.widget.NavigationView
             android:layout_width="wrap_content"
             android:layout_height="match_parent"
             app:menu="@menu/navigation"
